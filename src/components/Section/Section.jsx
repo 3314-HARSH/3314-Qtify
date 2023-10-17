@@ -23,13 +23,13 @@ function Section({ title, data, type }) {
           {!carouselToggle ? (
             <div className={Styles.wrapper}>
               {data.map((item) => {
-                return <Card data={item} type={type} />;
+                return <Card key={item.id} data={item} type={type} />;
               })}
             </div>
           ) : (
             <Carousel
               data={data}
-              renderComponent={(data) => <Card data={data} type={type} />}
+              renderComponent={(item) => <Card data={item} type={type} />}
             />
           )}
         </div>

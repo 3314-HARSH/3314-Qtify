@@ -17,7 +17,7 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <div>
+      <div style={{ padding: "30px" }}>
         <Section data={topAlbumsData} type="album" title="Top Albums" />
       </div>
     </div>

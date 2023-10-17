@@ -7,7 +7,7 @@ function CarouselRightNavigation() {
   const swiper = useSwiper();
   const [isEnd, setIsEnd] = useState(swiper.isEnd);
   useEffect(() => {
-    swiper.on("slidechange", function () {
+    swiper.on("slideChange", function () {
       setIsEnd(swiper.isEnd);
     });
   }, []);

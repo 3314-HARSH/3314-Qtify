@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import styles from "./Carousel.module.css";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import CarouselLeftNavigation from "./CarouselLeftNavigation";
 import CarouselRightNavigation from "./CarouselRightNavigation";
 import "swiper/css";
@@ -19,7 +19,7 @@ function Carousel({ data, renderComponent }) {
         style={{ padding: "0px 20px" }}
         initialSlide={0}
         modules={[Navigation]}
-        slideperview={"auto"}
+        slidesPerView={"auto"}
         spaceBetween={40}
         allowTouchMove
       >
