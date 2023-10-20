@@ -1,0 +1,29 @@
+.audioPlayer {
+  padding: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indicator {
+  width: 50%;
+  height: 4px;
+  background-color: white;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.progressBar {
+  height: 100%;
+  background-color: var(--color-primary);
+}
+
+.icon {
+  fill: white;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.controler {
+  text-align: center;
+  padding-bottom: 2rem;
+}

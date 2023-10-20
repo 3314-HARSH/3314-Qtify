@@ -5,7 +5,6 @@ import styles from "./Carousel.module.css";
 
 const CarouselLeftNavigation = () => {
   const swiper = useSwiper();
-  console.log(swiper);
   const [isBeginning, setIsBeginning] = useState(swiper.isBeginning);
 
   useEffect(() => {

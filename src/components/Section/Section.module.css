@@ -1,6 +1,6 @@
 .wrapper {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   flex-wrap: wrap;
 }
 
