@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Section from "./components/Section/Section";
 import Audio from "./components/Audio/Audio";
+import Accordian from "./components/Accordian/Accordian";
 function App() {
   const [topAlbumsData, SetTopAlbumsData] = useState([]);
   const [newAlbumsData, SetNewAlbumsData] = useState([]);
@@ -62,7 +63,7 @@ function App() {
   }, []);
   return (
     <div>
-      <Navbar />
+      <Navbar data={[...topAlbumsData, ...newAlbumsData, ...allSongsData]} />
       <Hero />
       <div style={{ padding: "2rem 2.5rem" }}>
         <Section data={topAlbumsData} type="album" title="Top Albums" />
@@ -81,6 +82,10 @@ function App() {
         />
       </div>
       <div className="lineBreak"></div>
+      <div>
+        <Accordian />
+      </div>
+      <div className="lineBreak-gray"></div>
       <div>
         <Audio />
       </div>

@@ -29,3 +29,38 @@
   border-left: none;
   cursor: pointer;
 }
+
+.searchItemWrapper {
+  position: absolute;
+  top: 6.05rem;
+  left: 25%;
+  width: 44.5%;
+  z-index: 10;
+  font-size: 1.5rem;
+  height: 25rem;
+  overflow: auto;
+}
+.searchItem {
+  display: flex;
+  height: 6rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #121212e6;
+  border: 1px solid var(--color-primary);
+  border-left-width: 2px;
+  border-right: none;
+}
+.searchItem:hover {
+  background-color: rgb(52, 51, 51);
+}
+.img {
+  width: 5rem;
+  border-radius: 3px;
+}
+.about {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin-left: 0.7rem;
+  justify-content: space-between;
+}

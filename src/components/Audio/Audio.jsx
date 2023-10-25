@@ -52,7 +52,6 @@ function Audio() {
     } else {
       setCurrentSong(songsData[index - 1]);
     }
-    console.log(isPlaying);
     audioEle.current.currentTime = 0;
   };
   const moveNext = () => {
